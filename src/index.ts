@@ -1,0 +1,6 @@
+export { default as FloatingPanelRoot } from './components/FloatingPanelRoot.vue'
+export { default as FloatingPanelContent } from './components/FloatingPanelContent.vue'
+export { default as FloatingPanelDock } from './components/FloatingPanelDock.vue'
+export { default as FloatingPanelTrigger } from './components/FloatingPanelTrigger.vue'
+export { createContext } from './components/shared/createContext'
+export { usePanelVisible, usePosition } from './composables'
