@@ -1,37 +1,19 @@
 {
-  "name": "vue-floating-dock",
+  "name": "docs",
   "type": "module",
   "version": "0.0.14",
-  "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.umd.cjs"
-    }
-  },
-  "main": "./dist/index.umd.cjs",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "typings": "./dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
   "scripts": {
-    "dev": "vite",
-    "build": "run-p type-check \"build-only {@}\" --",
-    "preview": "vite preview",
-    "test:unit": "vitest",
-    "build-only": "vite build",
-    "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "docs:install": "pnpm --filter docs install",
-    "docs:dev": "pnpm --filter docs docs:dev",
-    "docs:build": "pnpm --filter docs docs:build",
-    "docs:preview": "pnpm --filter docs docs:preview"
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "peerDependencies": {
+    "typescript": "*"
   },
   "dependencies": {
     "@vueuse/core": "^10.11.0",
-    "vue": "^3.4.38"
+    "vue": "^3.4.38",
+    "vue-floating-dock": "link:../src"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.25.0",

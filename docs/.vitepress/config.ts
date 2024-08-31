@@ -6,6 +6,7 @@ import { resolve } from 'node:path'
 export default defineConfig({
   title: 'Vue floating dock',
   description: 'Vue floating dock description...',
+  base: '/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -31,7 +32,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
+      { icon: 'github', link: 'https://github.com/pedromelo222/vue-floating-dock' },
     ],
   },
   vite: {

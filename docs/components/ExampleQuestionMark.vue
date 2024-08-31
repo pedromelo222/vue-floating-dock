@@ -1,5 +1,5 @@
 <script setup>
-import { FloatingPanelContent, FloatingPanelDock, FloatingPanelRoot, FloatingPanelTrigger } from 'vue-floating-dock'
+// import { FloatingPanelContent, FloatingPanelDock, FloatingPanelRoot, FloatingPanelTrigger } from 'vue-floating-dock'
 
 const checkIsSafari = () => navigator.userAgent.includes('Safari') && !navigator.userAgent.includes('Chrome')
 </script>

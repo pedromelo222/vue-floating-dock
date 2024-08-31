@@ -1,5 +1,5 @@
 <script setup>
-import { FloatingPanelContent, FloatingPanelDock, FloatingPanelRoot, FloatingPanelTrigger } from 'vue-floating-dock'
+// import { FloatingPanelContent, FloatingPanelDock, FloatingPanelRoot, FloatingPanelTrigger } from 'vue-floating-dock'
 </script>
 
 <template>
