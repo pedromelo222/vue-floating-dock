@@ -7,7 +7,7 @@ const checkIsSafari = () => navigator.userAgent.includes('Safari') && !navigator
 <template>
   <FloatingPanelRoot v-slot="{ isDragging }" name="vue-panel">
     <div
-      v-if="!checkIsSafari()" class="glowing-dock"
+      v-if="!checkIsSafari()" class="glowing-dock-vue"
       :style="isDragging ? 'opacity: 0.6 !important' : ''"
     />
     <FloatingPanelDock
@@ -62,7 +62,7 @@ const checkIsSafari = () => navigator.userAgent.includes('Safari') && !navigator
   height: 10px;
 }
 
-.floating-dock__anchor .glowing-dock {
+.floating-dock__anchor .glowing-dock-vue {
     position: absolute;
     left: 0;
     top: 0;
@@ -78,7 +78,7 @@ const checkIsSafari = () => navigator.userAgent.includes('Safari') && !navigator
     filter: blur(60px);
 }
 
-.floating-dock__anchor:hover .glowing-dock {
+.floating-dock__anchor:hover .glowing-dock-vue {
     opacity: 0.6;
 }
 </style>

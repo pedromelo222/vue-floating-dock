@@ -28,28 +28,6 @@ const checkIsSafari = () => navigator.userAgent.includes('Safari') && !navigator
 
 .dock {
   --floating-dock-widget-shadow: rgba(128, 128, 128, 0.1);
-  transition:
-    max-width 0.4s ease,
-    padding 0.5s ease,
-    transform 0.3s ease,
-    all 0.4s ease;
-}
-
-.dock[data-state="inactive"][data-position="bottom"],
-.dock[data-state="inactive"][data-position="left"] {
-  border-bottom-left-radius: 0 !important;
-  border-bottom-right-radius: 0 !important;
-}
-
-.dock[data-state="inactive"][data-position="right"],
-.dock[data-state="inactive"][data-position="top"] {
-  border-top-left-radius: 0 !important;
-  border-top-right-radius: 0 !important;
-}
-.divider {
-  border-left: 1px solid #8883;
-  width: 1px;
-  height: 10px;
 }
 
 .floating-dock__anchor .glowing-dock {

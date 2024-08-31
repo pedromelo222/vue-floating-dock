@@ -99,11 +99,11 @@ Contains the dock panel that holds the triggers.
 <DataAttributesTable
   :data="[
     {
-      attribute: 'state',
+      attribute: '[data-state]',
       values: ['inactive', 'open', 'closed'],
    },
    {
-     attribute: 'position',
+     attribute: '[data-position]',
      values: ['top', 'bottom', 'left', 'right'],
    }
   ]"
@@ -134,11 +134,11 @@ The trigger that opens the content panel, need to be placed inside the dock, mul
 <DataAttributesTable
   :data="[
     {
-      attribute: 'state',
+      attribute: '[data-state]',
       values: ['inactive', 'open', 'closed'],
    },
    {
-     attribute: 'position',
+     attribute: '[data-position]',
      values: ['top', 'bottom', 'left', 'right'],
    }
   ]"
@@ -151,7 +151,7 @@ The content panel that opens when the trigger is clicked. The panel is anchored 
 <DataAttributesTable
   :data="[
    {
-     attribute: 'position',
+     attribute: '[data-position]',
      values: ['top', 'bottom', 'left', 'right'],
    }
   ]"
