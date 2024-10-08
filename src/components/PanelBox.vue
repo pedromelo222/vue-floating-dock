@@ -21,11 +21,9 @@ watchEffect(() => {
   if (!container.value)
     return
   if (state.value.open) {
-    nextTick(() => {
-      if (!panelBox.value)
-        throw new Error('panelBox is not defined')
-      panelBox.value.style.pointerEvents = (isResizing.value || props.isDragging) ? 'none' : 'auto'
-    })
+    if (!panelBox.value)
+      throw new Error('panelBox is not defined')
+    panelBox.value.style.pointerEvents = (isResizing.value || props.isDragging) ? 'none' : 'auto'
   }
 })
 
